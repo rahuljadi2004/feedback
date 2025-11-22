@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <div class="container success message">
+            <h2>thanku, {{ name  }}</h2>
+            <p>Your feedback has been received successfully.</p>
+            <h3>All FeedBack</h3>
+            <ul>
+                {% for i in feedbacks %}
+                    <li>{{   i[0]  }}-{{   i[1]  }}</li>
+                {% endfor %}
+            </ul>
+            <a href="/">Go Back to Home</a>
+        </div>
+    </body>
+</html>
